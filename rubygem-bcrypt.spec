@@ -4,7 +4,7 @@
 #
 Name     : rubygem-bcrypt
 Version  : 3.1.10
-Release  : 4
+Release  : 5
 URL      : https://rubygems.org/downloads/https://rubygems.org/downloads/bcrypt-3.1.10.gem
 Source0  : https://rubygems.org/downloads/https://rubygems.org/downloads/bcrypt-3.1.10.gem
 Summary  : No detailed summary available
