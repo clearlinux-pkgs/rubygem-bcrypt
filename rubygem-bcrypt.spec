@@ -4,9 +4,9 @@
 #
 Name     : rubygem-bcrypt
 Version  : 3.1.10
-Release  : 5
-URL      : https://rubygems.org/downloads/https://rubygems.org/downloads/bcrypt-3.1.10.gem
-Source0  : https://rubygems.org/downloads/https://rubygems.org/downloads/bcrypt-3.1.10.gem
+Release  : 6
+URL      : https://rubygems.org/downloads/bcrypt-3.1.10.gem
+Source0  : https://rubygems.org/downloads/bcrypt-3.1.10.gem
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -19,6 +19,7 @@ BuildRequires : rubygem-rdoc
 BuildRequires : rubygem-rspec
 BuildRequires : rubygem-rspec-core
 BuildRequires : rubygem-rspec-expectations
+BuildRequires : rubygem-rspec-mocks
 BuildRequires : rubygem-rspec-support
 
 %description
@@ -72,87 +73,48 @@ popd
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/bcrypt-3.1.10.gem
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/__bc_crypt-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/__bc_salt-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/autodetect_cost-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/calibrate-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/cdesc-Engine.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/cost%3d-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/cost-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/generate_salt-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/hash_secret-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/valid_salt%3f-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Engine/valid_secret%3f-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Error/cdesc-Error.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Errors/InvalidCost/cdesc-InvalidCost.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Errors/InvalidHash/cdesc-InvalidHash.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Errors/InvalidSalt/cdesc-InvalidSalt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Errors/InvalidSecret/cdesc-InvalidSecret.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Errors/cdesc-Errors.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/%3d%3d-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/cdesc-Password.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/checksum-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/cost-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/create-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/is_password%3f-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/salt-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/split_hash-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/valid_hash%3f-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/valid_hash%3f-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/Password/version-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/BCrypt/cdesc-BCrypt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/Crypt/cdesc-Crypt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/Crypt/crypt-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/Crypt/salt-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/ext/jruby/bcrypt_jruby/page-BCrypt_java.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/ext/mri/page-Makefile.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/page-CHANGELOG.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/page-COPYING.ri
-/usr/lib64/ruby/gems/2.2.0/doc/bcrypt-3.1.10/ri/page-README_md.ri
-/usr/lib64/ruby/gems/2.2.0/extensions/x86_64-linux/2.2.0/bcrypt-3.1.10/gem.build_complete
-/usr/lib64/ruby/gems/2.2.0/extensions/x86_64-linux/2.2.0/bcrypt-3.1.10/gem_make.out
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/.gitignore
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/.rspec
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/.travis.yml
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/CHANGELOG
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/COPYING
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/Gemfile
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/Gemfile.lock
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/README.md
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/bcrypt.gemspec
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/jruby/bcrypt_jruby/BCrypt.java
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/.RUBYARCHDIR.time
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/Makefile
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/bcrypt_ext.c
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/bcrypt_ext.o
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt.c
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt.h
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt.o
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt_blowfish.c
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt_blowfish.o
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt_gensalt.c
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/crypt_gensalt.o
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/extconf.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/ow-crypt.h
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/wrapper.c
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/wrapper.o
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/lib/bcrypt.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/lib/bcrypt/engine.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/lib/bcrypt/error.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/lib/bcrypt/password.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/spec/TestBCrypt.java
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/spec/bcrypt/engine_spec.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/spec/bcrypt/error_spec.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/spec/bcrypt/password_spec.rb
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/spec/spec_helper.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/bcrypt-3.1.10.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/bcrypt-3.1.10.gem
+/usr/lib64/ruby/gems/2.3.0/extensions/x86_64-linux/2.3.0/bcrypt-3.1.10/gem.build_complete
+/usr/lib64/ruby/gems/2.3.0/extensions/x86_64-linux/2.3.0/bcrypt-3.1.10/gem_make.out
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/.gitignore
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/.rspec
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/.travis.yml
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/CHANGELOG
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/COPYING
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/Gemfile
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/Gemfile.lock
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/README.md
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/bcrypt.gemspec
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/jruby/bcrypt_jruby/BCrypt.java
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/.RUBYARCHDIR.time
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/Makefile
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/bcrypt_ext.c
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/bcrypt_ext.o
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt.c
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt.h
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt.o
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt_blowfish.c
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt_blowfish.o
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt_gensalt.c
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/crypt_gensalt.o
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/extconf.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/ow-crypt.h
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/wrapper.c
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/wrapper.o
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/lib/bcrypt.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/lib/bcrypt/engine.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/lib/bcrypt/error.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/lib/bcrypt/password.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/spec/TestBCrypt.java
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/spec/bcrypt/engine_spec.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/spec/bcrypt/error_spec.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/spec/bcrypt/password_spec.rb
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/spec/spec_helper.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/bcrypt-3.1.10.gemspec
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/extensions/x86_64-linux/2.2.0/bcrypt-3.1.10/bcrypt_ext.so
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/ext/mri/bcrypt_ext.so
-/usr/lib64/ruby/gems/2.2.0/gems/bcrypt-3.1.10/lib/bcrypt_ext.so
+/usr/lib64/ruby/gems/2.3.0/extensions/x86_64-linux/2.3.0/bcrypt-3.1.10/bcrypt_ext.so
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/ext/mri/bcrypt_ext.so
+/usr/lib64/ruby/gems/2.3.0/gems/bcrypt-3.1.10/lib/bcrypt_ext.so
